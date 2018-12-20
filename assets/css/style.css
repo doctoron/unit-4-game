@@ -1,0 +1,21 @@
+ul {
+    display: flex;
+    list-style:none;
+    padding: 0;
+}
+li {
+    padding: 20px;
+}
+.crystal-image {
+    width: 300px;
+    height: 300px;
+  }
+.container {
+    background: image("../images/")
+}
+@media screen and (max-width:800px) {
+    ul {
+        flex-direction: column;
+    }
+
+}

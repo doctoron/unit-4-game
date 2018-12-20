@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>simple crystal game</title>
+
+  <style type="text/css">
+
+    .crystal-image {
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+
+</head>
+<body>
+
+    <div id="crystals">
+        <ul class="crystal-image">
+            <li><img src="assets/images/Amethyst_Healing.jpg" alt="amethyst">  </li>
+            <li><img src="assets/images/Rose-quartz-heart.jpg" alt="quartz"></li>
+            <li><img src="assets/images/Verdite.jpg" alt="verdite"> </li>
+        </ul>
+    </div>
+
+  <!-- JAVASCRIPT  -->
+  <!-- ========================================= -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+
+  var counter = 0;
+  $(".crystal-image").on("click", function() {
+
+    // This time we increase the counter by *10* each time the user clicks.
+    counter += 10;
+
+    // We then output the new counter value each time the crystal is clicked.
+    alert("Your new score is: " + counter);
+
+  });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>simple crystal game</title>
+
+  <style type="text/css">
+
+    .crystal-image {
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Here we added a header which will hold the "number-to-guess" -->
+  <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+  <div id="crystals">
+      <ul class="crystal-image">
+          <li><img src="assets/images/Amethyst_Healing.jpg" alt="amethyst">  </li>
+          <li><img src="assets/images/Rose-quartz-heart.jpg" alt="quartz"></li>
+          <li><img src="assets/images/Verdite.jpg" alt="verdite"> </li>
+      </ul>
+  </div>
+
+  <!-- JAVASCRIPT  -->
+  <!-- ========================================= -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+
+  // Here we establish the "targetNumber" (set to 50 in this example).
+  var targetNumber = 50;
+
+  // Here we set the "number-to-guess" header to match the "targetNumber".
+  // Eventually this will allow us to change the HTML to match the value in the JavaScript.
+  $("#number-to-guess").text(targetNumber);
+
+  var counter = 0;
+  $(".crystal-image").on("click", function() {
+
+    counter += 10;
+
+    alert("Your new score is: " + counter);
+
+  });
+
+  </script>
+</body>
+</html>
