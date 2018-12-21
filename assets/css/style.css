@@ -1,21 +1,46 @@
-ul {
-    display: flex;
-    list-style:none;
-    padding: 0;
+
+h1 {
+   font-size: xx-large;
 }
-li {
-    padding: 20px;
+h2 {
+    font-size: larger;
 }
-.crystal-image {
-    width: 300px;
-    height: 300px;
-  }
+p {
+    font-weight: bold;
+}
 .container {
+    width: auto;
+
     background: image("../images/")
+}
+.header {
+    text-align: center;
+    color: #daa520;
+}    
+
+.crystal-image {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    height: 175px;
+    width: 175px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+#amethyst {
+    vertical-align: top;
+}
+#quartz {
+    vertical-align: top;
+}
+#onyx {
+    vertical-align: top;
+}
+#verdite {
+    vertical-align: top;
 }
 @media screen and (max-width:800px) {
     ul {
         flex-direction: column;
     }
-
 }

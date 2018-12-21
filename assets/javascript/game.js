@@ -1,6 +1,6 @@
 var targetNumber = 53;
 
-$("#number-to-guess").text(targetNumber);
+$(".number-to-guess").text(targetNumber);
 
 var counter = 0;
 
@@ -23,6 +23,7 @@ for (var i = 0; i < numberOptions.length; i++) {
       imageCrystal.attr("src", "assets/images/Amethyst_Healing.jpg");
       imageCrystal.attr("src", "assets/images/Rose-quartz-heart.jpg");
       imageCrystal.attr("src", "assets/images/Verdite.jpg");
+      imageCrystal.attr("scc", "assets/images/onyx2.jpg");
 
       
 
