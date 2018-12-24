@@ -26,6 +26,21 @@ p {
     padding-top: 0px;
     margin-top: 0px;
 }
+#taget-number {
+
+}
+#crystals {
+    float:none;
+    display: inline;
+    vertical-align: top;
+    align-self: center;
+    border: none;
+    height: 175px;
+    width: 175px;
+    padding-top: 0px;
+    margin-top: 0px;
+
+}
 #amethyst {
     vertical-align: top;
 }
