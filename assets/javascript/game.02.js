@@ -52,18 +52,18 @@ $("#crystals").on("click", ".crystal-image", function() {
     
     
     function getGems() {
-      var imageSrcArray = [
+      var gemImageArray = [
         "assets/images/Amethyst_Healing.jpg",
         "assets/images/Rose-quartz-heart.jpg",
         "assets/images/Verdite.jpg",
         "assets/images/Black-onyx2.jpg"
       ];    
       
-      for (var i = 0; i < imageSrcArray.length; i++) {
+      for (var i = 0; i < gemImageArray.length; i++) {
         let imageCrystal = $(  "<img>");  
           imageCrystal.addClass("crystal-image");
         
-        let imageName = imageSrcArray[i];
+        let imageName = gemImageArray[i];
           imageCrystal.attr("src",imageName);
         
         let randomNumber = randoMizer(gemHigh,gemLow);
@@ -88,7 +88,7 @@ $("#crystals").on("click", ".crystal-image", function() {
   // Now for the hard part. Creating multiple crystals each with their own unique number value.
   // We begin by expanding our array to include four options.
   // To gain better understanding of this process, I borrowed this approach from my cohort, "Tamekia": 
-  // Using the imageSrcArray for creating crystal images for every numberOption iteration:  
+  // Using the gemImageArray for creating crystal images for every numberOption iteration:  
   // This time, our click event applies to every single crystal on the page. Not just one.
   // console.log("ParseInt(crystalValue): " + crystalValue);  
   // We then add the crystalValue to the user's "totalScore" which is a global variable.
@@ -103,7 +103,7 @@ $("#crystals").on("click", ".crystal-image", function() {
       imageCrystal.attr("src", "assets/images/Rose-quartz-heart.jpg");
       imageCrystal.attr("src", "assets/images/Verdite.jpg");
       imageCrystal.attr("src", "assets/images/Black-onyx2.jpg");*/     
-  // Created loop to create crystals for every imageSrcArray.
+  // Created loop to create crystals for every gemImageArray.
   // Each imageCrystal will be given a data attribute called data-crystalValue.
   // This data attribute will be set equal to the array value.
   // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
@@ -111,6 +111,6 @@ $("#crystals").on("click", ".crystal-image", function() {
   // Now for the hard part. Creating multiple crystals each with their own unique number value.
   // We begin by expanding our array to include four options.
   // To gain better understanding of this process, I borrowed this approach from my cohort, "Tamekia": 
-  // Using the imageSrcArray for creating crystal images for every numberOption iteration:
+  // Using the gemImageArray for creating crystal images for every numberOption iteration:
   // var numberOptions = [10, 5, 3, 7];
   
