@@ -17,30 +17,33 @@ p {
     color: #daa520;
 }    
 
-.crystal-image {
-    display: inline-block;
-    vertical-align: top;
-    border: none;
-    height: 175px;
-    width: 175px;
-    padding-top: 0px;
-    margin-top: 0px;
-}
 #taget-number {
-
+    font-variant-caps: titling-caps;
 }
-#crystals {
-    float:none;
-    display: inline;
-    vertical-align: top;
-    align-self: center;
+
+.crystal-image {
     border: none;
-    height: 175px;
-    width: 175px;
+    height: 150px;
+    width: 150px;
     padding-top: 0px;
     margin-top: 0px;
-
 }
+
+#crystals {
+    float: left; 
+    border:none;
+    height: 150px;
+    width: 150px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.score-data {
+    /* float: right; */
+    text-align: right;
+    color: #080108;
+}
+
 #amethyst {
     vertical-align: top;
 }
