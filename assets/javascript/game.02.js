@@ -77,7 +77,8 @@ $("#crystals").on("click", ".crystal-image", function() {
       targetNumber = Math.floor(Math.random() * (high - low + 1) + low);
       return targetNumber;
     }
-
+  // var myFunction = function (a, b) {return a * b};
+  // var x = myFunction(4, 3);
   // Function randoMizer() to generate a random number based on parameters (num1, num2)
   // var targetNumber = Math.floor(Math.random() * 120) +19;
   // console.log("Target Number: " + targetNumber);
