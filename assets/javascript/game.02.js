@@ -48,6 +48,7 @@ $("#crystals").on("click", ".crystal-image", function() {
       $("#total-score").text(totalScore);
       $("#wins").text(wins);
       $("#losses").text(losses);
+      $("message").text()
       $("#crystals").empty();
     }
     
@@ -78,6 +79,11 @@ $("#crystals").on("click", ".crystal-image", function() {
       targetNumber = Math.floor(Math.random() * (high - low + 1) + low);
       return targetNumber;
     }
+    $("#card-text").on("hover", ".header", function instructions() {
+      $(instructions.document).tooltip();
+    } );
+    
+  // display instructions on hover
   // var myFunction = function (a, b) {return a * b};
   // var x = myFunction(4, 3);
   // Function randoMizer() to generate a random number based on parameters (num1, num2)

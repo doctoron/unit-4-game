@@ -36,6 +36,13 @@ p {
     margin-top: 0px;
     flex-direction: row;
 }
+.card-body {
+    background-color: palegreen;
+}
+.message {
+        display: inline-block;
+        width: 5em;
+}
 
 #crystals {
     float: left; 
@@ -68,15 +75,17 @@ p {
 @media screen and (max-width:790px) {
     .crystal-image {
         flex-direction: column;
-        width: 75px;
-        height: 75px;
+        width: 100px;
+        height: 100px;
     }
     .h1 {
         font-size: small;
     }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:380px) {
     .crystal-image {
         flex-direction: column;
+        width: 75px;
+        height: 75px;
     }
 }
