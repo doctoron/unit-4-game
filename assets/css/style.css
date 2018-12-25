@@ -85,7 +85,7 @@ p {
 @media screen and (max-width:380px) {
     .crystal-image {
         flex-direction: column;
-        width: 75px;
-        height: 75px;
+        width: 100px;
+        height: 100px;
     }
 }
