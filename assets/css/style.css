@@ -82,7 +82,7 @@ p {
         font-size: small;
     }
 }
-@media screen and (max-width:380px) {
+@media screen and (max-width:414px) {
     .crystal-image {
         flex-direction: column;
         width: 100px;
