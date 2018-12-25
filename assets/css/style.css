@@ -30,8 +30,8 @@ p {
 .crystal-image {
     float: left;
     border: none;
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     padding-top: 0px;
     margin-top: 0px;
     flex-direction: row;
@@ -40,7 +40,7 @@ p {
 #crystals {
     float: left; 
     border:none;
-    height: 100px;
+    height: 120px;
     width: 100%;
     padding-top: 0px;
     margin-top: 0px;
@@ -68,6 +68,11 @@ p {
 @media screen and (max-width:790px) {
     .crystal-image {
         flex-direction: column;
+        width: 75px;
+        height: 75px;
+    }
+    .h1 {
+        font-size: small;
     }
 }
 @media screen and (max-width:600px) {
