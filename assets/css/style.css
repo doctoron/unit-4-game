@@ -1,6 +1,7 @@
 
 h1 {
    font-size: xx-large;
+
 }
 h2 {
     font-size: larger;
@@ -12,7 +13,8 @@ p {
     width: auto;
 
 }
-.header {
+
+#header {
     text-align: center;
     color: #daa520;
 }    
@@ -20,22 +22,29 @@ p {
 #taget-number {
     font-variant-caps: titling-caps;
 }
-
+.column {
+    float: left;
+    width: 66.6%;
+    padding: 5px;
+}
 .crystal-image {
+    float: left;
     border: none;
     height: 150px;
     width: 150px;
     padding-top: 0px;
     margin-top: 0px;
+    flex-direction: row;
 }
 
 #crystals {
     float: left; 
     border:none;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100%;
     padding-top: 0px;
     margin-top: 0px;
+    flex-direction: row;
 }
 
 .score-data {
@@ -55,6 +64,11 @@ p {
 }
 #verdite {
     vertical-align: top;
+}
+@media screen and (max-width:790px) {
+    .crystal-image {
+        flex-direction: column;
+    }
 }
 @media screen and (max-width:600px) {
     .crystal-image {

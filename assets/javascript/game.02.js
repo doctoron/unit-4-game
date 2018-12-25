@@ -1,15 +1,15 @@
 // Declaration of variables & places them into the DOM
 
 $(document).ready(function() {
-  var randomNumber = 0;
-  var targetNumber = 0;
-  var totalScore = 0;
-  var gemHigh = 12;
-  var gemLow = 1;
-  var gameHigh = 120;
-  var gameLow = 19;
-  var wins = 0;
-  var losses = 0;
+  let randomNumber = 0;
+  let targetNumber = 0;
+  let totalScore = 0;
+  let gemHigh = 12;
+  let gemLow = 1;
+  let gameHigh = 120;
+  let gameLow = 19;
+  let wins = 0;
+  let losses = 0;
   startGame();
   getGems();
 
@@ -17,6 +17,7 @@ $(document).ready(function() {
 $("#crystals").on("click", ".crystal-image", function() {
     var crystalValue = ($(this).attr("data-crystalValue"));
     crystalValue = parseInt(crystalValue);
+    // The addition assignment operator (+=) adds crystalValue to a totalScore.
     totalScore += crystalValue;  
     $("#total-score").text(totalScore);
   
@@ -43,8 +44,8 @@ $("#crystals").on("click", ".crystal-image", function() {
       totalScore = 0; 
       randomNumber = 0;
       targetNumber = randoMizer(gameHigh,gameLow);
-      $("#total-score").text(totalScore);
       $("#target-number").text(targetNumber);
+      $("#total-score").text(totalScore);
       $("#wins").text(wins);
       $("#losses").text(losses);
       $("#crystals").empty();
