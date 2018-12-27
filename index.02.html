@@ -14,17 +14,45 @@
 </head>
 
 <body>    
-<!-- Here we added in our crystal images -->
-        <div class = "container">
-            <div class ="jumbotron">
-                <div class="col-12 header">
-                    <h1 id="header">Simple Crystal Game</h1>
-                </div>
-            <div class="col-5 ">
-                  <div id = "crystals">
+    <div class = "container">
+        <div class ="row">
+            <div class="col-12">
+                <h1 id="header">Simple Crystal Game</h1>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p class="score-data">Target Number: <span id="target-number"></span></p>
+                    <p class="score-data">Your Score: <span id="total-score"></span></p>
+                    <p class="score-data">Wins: <span id="wins"></span></p>
+                    <p class="score-data">Losses: <span id="losses"></span></p>
+                </div>                    
+                <div class="col-9">
+                    <!-- Here we added in our crystal images -->
+                    <div id = "crystals">
 
                   </div>
+                </div>
+            </div class="row"></div>
+            <div class="col-3"></div>
+            <div class="col-6"></div>
+            <div class="col-3">
+                <a tabindex="0" class="btn btn-md btn-dark" role="button" 
+                data-toggle="popover" data-trigger="focus" title="Instructions" data-content="
+                Your target number has been randomly generated.
+                When the player click on a crystal, it will add points to your total score.
+                The amount of points will be hidden until the crystal is chosen.
+                Win if your total score matches the target number." 
+                data-original-title="Dismissible popover">How to Play</a>
             </div>
+                <!-- Note: A custom script is used to activate popovers: 
+                <a tabindex="0" class="btn btn-sm btn-warning" role="button" data-toggle="" 
+                data-trigger="focus" title="instruct-text" data-content="Click anywhere to dismiss this popover" 
+                data-original-title="How to Play">How to Play </a>
+                
+                <div id = "instructions">
+                    <p class="instructions">How To Play:<span id="instruct-text"><span></p>
+                </div>
+                -->
                 <div class="row">
 
                 </div>

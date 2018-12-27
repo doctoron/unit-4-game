@@ -1,7 +1,6 @@
 
 h1 {
    font-size: xx-large;
-
 }
 h2 {
     font-size: larger;
@@ -11,16 +10,31 @@ p {
 }
 .container {
     width: auto;
-
+    background-color: tan;
+    
+}
+/* animated header with color change */
+#myHeader {
+    background-color: #e4eee4;
+    text-align: center;
+    color: #704646;
+    -webkit-animation: mymove 10s infinite; /*Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+@-webkit-keyframes mymove {
+    75% {color: #0ead00;}
 }
 
-#header {
-    text-align: center;
-    color: #daa520;
-}    
+@keyframes mymove {
+    50%{color: #790404;}
+} 
 
 #taget-number {
     font-variant-caps: titling-caps;
+}
+
+.jumbotron {
+    background-color: #080108;
 }
 .column {
     float: left;
@@ -36,12 +50,19 @@ p {
     margin-top: 0px;
     flex-direction: row;
 }
+#popover-data {
+    justify-content: center;
+    align-content: center;
+}
+
 .card-body {
-    background-color: palegreen;
+    background-color: #e3e4e3;
+    color:#022b02;
 }
 .message {
-        display: inline-block;
-        width: 5em;
+    border-width: medium;
+    display: inline-block;
+        width: 300px;
 }
 
 #crystals {
@@ -55,11 +76,45 @@ p {
 }
 
 .score-data {
-    /* float: right; */
     text-align: right;
     color: #080108;
 }
-
+#instructions {
+    color:#03b939;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: #000000;
+    z-index: 2;
+    cursor:pointer;
+}
+#target-number {
+    background-color: #ffff00;
+    font-size: 24pt;
+    font-weight: bold;
+    color: #03b939;
+}
+#losses {
+    font-size: 18pt;
+    font-weight: bold;
+    background: #a9a9a9;
+    color:#ff0000;
+}
+#total-score {
+    font-size: 18pt;
+    font-weight: bolder;
+    background: #a9a9a9;
+    color: #000000;
+}
+#wins {
+    font-size: 18pt;
+    font-weight:bold;
+    background: #a9a9a9;
+    color: #03b939;
+}
 #amethyst {
     vertical-align: top;
 }
@@ -72,6 +127,7 @@ p {
 #verdite {
     vertical-align: top;
 }
+
 @media screen and (max-width:790px) {
     .crystal-image {
         flex-direction: column;
