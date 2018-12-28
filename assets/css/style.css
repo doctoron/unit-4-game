@@ -145,3 +145,12 @@ p {
         height: 100px;
     }
 }
+@media screen and (max-width:375px) {
+    .crystal-image {
+        flex-direction: column;
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+
+    }
+}
