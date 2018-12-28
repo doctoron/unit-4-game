@@ -50,22 +50,19 @@ $(document).ready(function() {
     $("#instruct-text").text()
     $("#crystals").empty();
   }
-
-    function onInstruct() {
-      document.getElementById("instruct-text").style.display = "block";
-      document.getElementById("instruct-text").append(instructionsText); 
-      return onInstruct;
-      console.log(onInstruct);
+let playHelp = function onPlayHelp(onclick) {
+      document.getElementById("#help-text").style.display = "block";
+      document.getElementById("#help-text").innerHTML=(`${playHelpText}`); 
     }
-    function offInstruct() {
+    function offPlayHelp() {
       $(document.getElementById("instruct-text").style.display = "none");
     }
-
-    instuctionsText=["Your target number has been randomly generated.",
-    "Clicking on a crystal will add points to your total score.",
-    "Points will be hidden until the crystal is chosen.",
-    "Win if your total score matches the target number."];
-  
+  let playHelpText=[
+  "The Target Number has been randomly generated.",
+  "Clicking on a crystal will add points to your Total Score.",
+  "Points will be hidden until the crystal is chosen.",
+  "Win if your total score matches the Target Number."
+]
   function getGems() {
     var gemImageArray = [
       "assets/images/Amethyst_Healing.jpg",
