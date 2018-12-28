@@ -47,20 +47,24 @@ $(document).ready(function() {
     $("#total-score").text(totalScore);
     $("#wins").text(wins);
     $("#losses").text(losses);
-    $("#message").text()
+    $("#instruct-text").text()
     $("#crystals").empty();
   }
 
-  
-  
-  function onInstruct() {
-    document.getElementById("instruct-text").style.display = "block";
-    document.getElementById("instruct-text").append(instructText); 
-  }
-  
-  function offInstruct() {
-    document.getElementById("instruct-text").style.display = "none";
-  }
+    function onInstruct() {
+      document.getElementById("instruct-text").style.display = "block";
+      document.getElementById("instruct-text").append(instructionsText); 
+      return onInstruct;
+      console.log(onInstruct);
+    }
+    function offInstruct() {
+      $(document.getElementById("instruct-text").style.display = "none");
+    }
+
+    instuctionsText=["Your target number has been randomly generated.",
+    "Clicking on a crystal will add points to your total score.",
+    "Points will be hidden until the crystal is chosen.",
+    "Win if your total score matches the target number."];
   
   function getGems() {
     var gemImageArray = [
@@ -89,12 +93,9 @@ $(document).ready(function() {
 function randoMizer(high,low) {
   targetNumber = Math.floor(Math.random() * (high - low + 1) + low);
   return targetNumber;
+  
 };
 
-instuctionsText=["Your target number has been randomly generated.",
-"Clicking on a crystal will add points to your total score.",
-"Points will be hidden until the crystal is chosen.",
-"Win if your total score matches the target number."];
 
 /* <a href="#" data-toggle="popover" title="Popover Header" 
 data-content="Some content inside the popover">Toggle popover</a> */

@@ -13,10 +13,6 @@
 </head>
 
 <body>    
-    <div id="instructions">
-        <h4>Instructions</h4>
-        <button onclick="onInstruct()">Toggle Instructions</button>
-    </div>
     <!-- Here we added in our crystal images -->
         <div class = "container">
             <div class="row align-items-start">
@@ -31,36 +27,46 @@
                                     <p class="score-data">Your Total Score: <span id="total-score"></span></p>
                                     <p class="score-data">Wins: <span id="wins"></span></p>
                                     <p class="score-data">Losses: <span id="losses"></span></p> 
-                                    <!-- <a id="popoverData" class="btn-warning" href="" dataContent="instructions.md" rel="" data-placement="right" data-oriignal-title="Instructions" data-trigger="hover">How To Play</a>         -->
                                 </div>
                                 <div class="col">               
                                     <div id="crystals">                                    
                                         <div class="crystal-image">
                                         </div>
-                                            <div class ="row">
-                                                <div class="col">
-                                                    <div id ="instruct-text"></div>
-                                                </div>
-                                            </div>
-                                        </div>                                                    
-                                    </div>
+                                    </div>                                                    
                                 </div>
                             </div>
                         </div>
-                    </div> 
-                </div>
+                    </div>
+                </div> 
             </div>
         </div>
     </div>
+</div>
 </div> 
 </div> 
 </div>    
-</div>                                        
-        <script src="assets/javascript/game.02.js" type="text/javascript"></script>
-        <!-- Here we added a link to the jQuery library -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-        </script>
-        
+</div>
+<div class = "container">
+    <div class="row">
+        <div class = "col">
+                <div id="instruct-text">
+                        <h4>Instructions</h4>
+                        <button onclick=onInstruct>Toggle Instructions</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="assets/javascript/game.02.js" type="text/javascript"></script>
+<!-- Here we added a link to the jQuery library -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+
+
+
 
 
 </body>
