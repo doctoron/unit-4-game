@@ -67,19 +67,19 @@
 #losses {
     font-size: inhert;
     font-weight: bold;
-    background: #a9a9a9;
+    background: #ffff00;
     color:#ff0000;
 }
 #total-score {
     font-size: inherit;
     font-weight: bolder;
-    background: #a9a9a9;
+    background: #ffff00;
     color: #000000;
 }
 #wins {
     font-size: inherit;
     font-weight:bold;
-    background: #d3d3d3;
+    background: #ffff00;
     color: #03b939;
 }
 @media screen and (max-width: 540px) {
