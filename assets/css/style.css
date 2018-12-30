@@ -1,96 +1,63 @@
-
-h1 {
-   font-size: xx-large;
+.myHeader {
+    text-align: center;
+    color: #790404; 
 }
-h2 {
-    font-size: larger;
-}
-p {
-    font-weight: bold;
-}
-.container {
-    width: auto;
-    background-color: tan;
-    
-}
-/* animated header with color change */
-#myHeader {
+/* 
+    Needs annimated header with color change NOT WORKING?????? 
     background-color: #e4eee4;
     text-align: center;
-    color: #704646;
-    -webkit-animation: mymove 10s infinite; /*Chrome, Safari, Opera */
+    color: #790404;
+    -webkit-animation: mymove 10s infinite; /*Chrome, Safari, Opera 
+*/
+
+/* 
     animation: mymove 5s infinite;
-}
-@-webkit-keyframes mymove {
-    75% {color: #0ead00;}
-}
-
-@keyframes mymove {
-    50%{color: #790404;}
-} 
-
-#taget-number {
-    font-variant-caps: titling-caps;
-}
-
-.jumbotron {
-    background-color: #080108;
-}
-.column {
-    float: left;
-    width: 66.6%;
-    padding: 5px;
-}
-.crystal-image {
-    float: left;
-    border: none;
-    height: 120px;
-    width: 120px;
-    padding-top: 0px;
-    margin-top: 0px;
-    flex-direction: row;
-}
-#popover-data {
-    justify-content: center;
+    @keyframes mymove {
+    50% {color: #790404;}
+    
+    @-webkit-keyframes mymove {
+    50% {color: #f8e806;}
+    }
+}} 
+*/
+.w3-card.w3-light-grey.w3-border.w3-left-justify {
+    margin-left: 50px;
     align-content: center;
-}
 
-.card-body {
-    background-color: #e3e4e3;
-    color:#022b02;
 }
-.message {
-    border-width: medium;
-    display: inline-block;
-        width: 300px;
+.w3-panel.w3-khaki {
+    max-width: 80%;
+    min-width: 60%;
+    margin-left: 15px;
+    align-self: auto;
+    offset: 0px;    
+} 
+.w3-card.w3-pale-green {
+    padding-top: 2px;
+    padding-bottom: 5px;
+    max-width: 60%;
+    min-width:40%;
+    margin-left: 50px;
 }
-
-#crystals {
-    float: left; 
-    border:none;
-    height: 120px;
-    width: 100%;
-    padding-top: 0px;
-    margin-top: 0px;
-    flex-direction: row;
+#target-number {
+    background-color: #ffff00;
+    font-size: 16px;
+    font-weight: bold;
+    color: #03b939;
 }
 
 .score-data {
-    text-align: right;
+    font-size: 14px;
+    justify-content: left;
+    text-align: left;
     color: #080108;
 }
-#instructions {
-    color:#03b939;
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    background-color: #000000;
-    z-index: 2;
-    cursor:pointer;
+
+#crystals {
+    column-width: auto;
+    text-align: center;
 }
+
 #target-number {
     background-color: #ffff00;
     font-size: 24pt;
@@ -98,59 +65,30 @@ p {
     color: #03b939;
 }
 #losses {
-    font-size: 18pt;
+    font-size: inhert;
     font-weight: bold;
     background: #a9a9a9;
     color:#ff0000;
 }
 #total-score {
-    font-size: 18pt;
+    font-size: inherit;
     font-weight: bolder;
     background: #a9a9a9;
     color: #000000;
 }
 #wins {
-    font-size: 18pt;
+    font-size: inherit;
     font-weight:bold;
-    background: #a9a9a9;
+    background: #d3d3d3;
     color: #03b939;
 }
-#amethyst {
-    vertical-align: top;
-}
-#quartz {
-    vertical-align: top;
-}
-#onyx {
-    vertical-align: top;
-}
-#verdite {
-    vertical-align: top;
-}
-
-@media screen and (max-width:790px) {
+@media screen and (max-width: 540px) {
     .crystal-image {
-        flex-direction: column;
-        width: 100px;
-        height: 100px;
-    }
-    .h1 {
-        font-size: small;
-    }
-}
-@media screen and (max-width:414px) {
-    .crystal-image {
-        flex-direction: column;
-        width: 100px;
-        height: 100px;
-    }
-}
-@media screen and (max-width:375px) {
-    .crystal-image {
-        flex-direction: column;
-        width: 60px;
+        width: 70%;
         height: 60px;
-        justify-content: center;
-
-    }
+        justify-content: center;      
+    }  
+    h1 {
+        text-size-adjust: auto;
+    } 
 }

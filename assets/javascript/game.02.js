@@ -13,7 +13,7 @@ $(document).ready(function() {
   getGems();
   
   
-  $("#crystals").on("click", ".crystal-image", function() {
+  $("#crystals").on("click", ".img-fluid", function() {
     let crystalValue = ($(this).attr("data-crystalValue"));
     crystalValue = parseInt(crystalValue);
     // The addition assignment operator (+=) adds crystalValue to existing totalScore.
@@ -73,7 +73,7 @@ let playHelp = function onPlayHelp(onclick) {
     
     for (var i = 0; i < gemImageArray.length; i++) {
       let imageCrystal = $(  "<img>");  
-      imageCrystal.addClass("crystal-image");
+      imageCrystal.addClass("img-fluid");
       
       let imageName = gemImageArray[i];
       imageCrystal.attr("src",imageName);
@@ -126,7 +126,7 @@ data-content="Some content inside the popover">Toggle popover</a> */
 // Every click, from every crystal adds to the global counter.
 // console.log("totalScore:" totallScore);
 // 1. For each iteration, we will create an imageCrystal with $();
-// 2. Next each crystal will be given the *class* ".crystal-image".
+// 2. Next each crystal will be given the *class* ".img-fluid".
 // This will allow the CSS to take effect.
 // 3. Each imageCrystal will be given a src link to the crystal image
 /*  FINGERS CROSSED: If this works then all these lines will not be necessary:
