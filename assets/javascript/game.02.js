@@ -63,6 +63,10 @@ let playHelp = function onPlayHelp(onclick) {
   "Points will be hidden until the crystal is chosen.",
   "Win if your total score matches the Target Number."
 ]
+$(".w3-panel").click(function(){
+  $(this).hide();
+});
+
   function getGems() {
     var gemImageArray = [
       "assets/images/Amethyst_Healing.jpg",
