@@ -63,7 +63,7 @@ let playHelp = function onPlayHelp(onclick) {
   "Points will be hidden until the crystal is chosen.",
   "Win if your total score matches the Target Number."
 ]
-$(".w3-panel").click(function(){
+$(".instructions").click(function(){
   $(this).hide();
 });
 
