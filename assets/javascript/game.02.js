@@ -63,8 +63,8 @@ let playHelp = function onPlayHelp(onclick) {
   "Points will be hidden until the crystal is chosen.",
   "Win if your total score matches the Target Number."
 ]
-$(".instructions").click(function(){
-  $(this).hide();
+$("button").click(function(){
+$(".w3-panel.w3-khaki.w3-hover-shadow.w3-padding-64").toggle();
 });
 
   function getGems() {
