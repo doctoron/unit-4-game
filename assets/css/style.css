@@ -40,7 +40,8 @@
     margin-left: 50px;
 }
 .button {
-    
+    margin-left:auto;
+    margin-right:auto;
 }
 #target-number {
     background-color: #ffff00;
